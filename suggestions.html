@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jose Padilla Painting
+	</title>
+	<meta charset="utf-8">
+	<link href="a1.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<h1>Jose Padilla Painting</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ww2.html">WWII</a></li>
+			<li><a href="fantasy.html">Fantasy</a></li>
+			<li><a href="animals.html">Animals</a></li>
+			<li><a href="suggestions.html">Suggestions</a></li>
+			<li><a href="siteMap.html">Site Map</a></li>
+		</ul> 
+	</nav> 
+	<main>
+		<h2>Suggestions</h2>
+			<p>What model would you like to see me paint next?
+			</p>
+		<article>
+			<div id="results">
+				<ul>
+					<li id="item1"></li>
+					<li id="item2"></li>
+					<li id="item3"></li>
+				</ul>
+          <p id="resultsExpl"></p>
+			</div>
+				<form>
+					<fieldset>
+						<label for="segBox" id="placeLabel">
+							Type the name of the model, then click Submit:
+						</label>
+						<input type="text" id="segBox" />
+					</fieldset>
+					<fieldset>
+						<button type="button" id="button">Submit</button>
+					</fieldset>
+				</form>
+		</article>
+		<script> //Global variables
+			var i = 1; //counter 
+			var listItem = "";
+			//function to add user input to list
+			function processInput() {
+			if (i <= 3) {
+			//doc segbox focus
+				listItem = "item" + i;
+				document.getElementById(listItem).innerHTML = document.getElementById("segBox").value;
+				//add the entered value to list
+				document.getElementById("segBox").value = ""; // clear the text box
+					if (i === 3) {
+					document.getElementById("resultsExpl").innerHTML = "Thanks for your suggestions.";
+					}
+					i++;
+				}
+			}
+		
+		//Submit button
+		var btn = document.getElementById("button");
+		
+		if (btn.addEventListener) {
+			btn.addEventListener("click", processInput, false);
+		} else if (btn.attachEvent) {
+			btn.attachEvent("onclick", processInput);
+		}
+   </script>
+	</main>
+	<footer>This page is made by Jose L. Padilla, as a College homework Assignment for educational purposes.
+	</footer>
+	</div>
+</body>
+</html>
