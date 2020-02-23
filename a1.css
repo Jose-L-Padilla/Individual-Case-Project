@@ -1,0 +1,85 @@
+header { background-color: #A0522D;
+	color: #3498db;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+h1 { text-shadow: 4px 4px black;
+	}
+nav { float: left;
+	width: 150px;
+	letter-spacing: 0.1em;
+	color: black;}
+nav ul { list-style-type: none;
+	margin: 0;
+	padding: 0;}
+nav a { text-decoration: none;
+	padding: 10px;
+	display: block;
+	background-color: #BDB76B;
+	border-bottom: 1px solid #ffffff;}
+nav a:link { color: #000000;
+	}
+nav a:visited { color: gray;
+	}
+nav a:hover { color: #869dc7;
+	background-color: #eaeaea;
+	font-weight: bold;}
+body { background-image: url("stoneWall.png");
+	background-color: #A4A4A4;
+	font-family: Verdana, Arial, sans-serif;}
+main { background-color: #00bfff;
+	color: #000000;
+	padding: 10px 20px;
+	display: block;
+	overflow: auto;}
+#wrapper { margin: 0 auto;
+	width: 90%;
+	min-width: 900px; max-width: 1280px;
+	background-color: #b3c7e6;
+	color: black;
+	box-shadow: 10px 10px 5px black;}
+footer { font-size: 80%;
+	text-align: center;
+	padding: 10px;
+	background-color: #A0522D;
+	font-style: italic;
+	clear: both;
+	color: #3498db;}
+#tBtn { font-style: italic;
+	font-size: 10px;
+	float: right;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px; 
+    border-radius: 10px;}
+#tBtn:hover { background-color: #A9A9A9;
+	}
+table {margin: auto;
+			border: 5px solid;}
+		th {background-color: green;
+			padding: 15px;
+			color: yellow;
+			border-style: outset;}
+		td {background-color: #d3d3d3;
+			padding: 10px;
+			border-style: outset;}
+@media only screen and (max-width: 768px) {
+	header { background-color: #A0522D;
+		height: 128px;}
+	h1 { font-size: 2em;
+		text-align: center;
+		padding-left: 0;}
+	nav { margin: 0;
+		}
+	nav a { display: block;
+		padding: 0.2em;
+		width: auto;
+		border-bottom: 1px;
+		border-bottom-color: black;}
+	main {padding-top: 1px;
+		}
+	h2 { padding: 0.5em 0 0 0.5em;
+		}
+	}

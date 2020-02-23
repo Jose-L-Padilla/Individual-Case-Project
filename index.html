@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jose Padilla Painting
+	</title>
+	<meta charset="utf-8">
+	<link href="a1.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<h1>Jose Padilla Painting</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ww2.html">WWII</a></li>
+			<li><a href="fantasy.html">Fantasy</a></li>
+			<li><a href="animals.html">Animals</a></li>
+			<li><a href="siteMap.html">Site Map</a></li>
+		</ul> 
+	</nav> 
+	<main>
+		<h2>Welcome to Jose Padilla Painting</h2>
+			<p>Jose Padilla Painting is a site to showcase of models that I have painted.
+			<br><br>
+			I paint a verity of models: Reaper Miniatures, Citadel Miniatures, Caesar Miniatures, Airfix Miniatures and even scatch built models.
+			</p>
+			<table>
+				<tr>
+					<th colspan="5">Types of Models I Have Painted</th>
+				</tr>
+				<tr>
+					<th ROWSPAN="4">WW2</th>
+					<th colspan="2">Americans</th>
+					<th colspan="2">Vehicles</th>
+				</tr>
+				<tr>
+					<td>Kneeling</td>
+					<td>Standing</td>
+					<td>Jeep</td>
+					<td>Landing Craft</td>
+				</tr>
+				<tr>
+					<th colspan="2">Germans</th>
+					<th colspan="2">Vehicles</t
+				</tr>
+				<tr>
+					<td>Standing</td>
+					<td>Kneeling</td>
+					<td>Truck</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<th ROWSPAN="6">Fantasy</th>
+					<th ROWSPAN="3">Werewols</th>
+					<td>Wolf Front</td>
+					<th ROWSPAN="3">People</th>
+					<td>Human</td>
+				</tr>
+				<tr>
+					<td>Wolf Side</td>
+					<td>Elf</td>
+				</tr>
+				<tr>
+					<td>Brown Wolf</td>
+					<td>Wizard</td>
+				</tr>
+				<tr>
+					<th ROWSPAN="3">Animals</th>
+					<td>Bear</td>
+					<th ROWSPAN="3">Goblins</th>
+					<td>Sword</td>
+				</tr>
+				<tr>
+					<td>Silver Dragon</td>
+					<td>Bow</td>
+				</tr>
+				<tr>
+					<td>Phase Spider</td>
+					<td>Mace</td>
+				</tr>
+			</table>
+			<br>
+			<button onclick="topFunction()" id="tBtn" title="Go to top">Back to Top</button>
+			<br>
+		
+		<h2>Cool painting video</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VrQtMPp6cc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<button onclick="topFunction()" id="tBtn" title="Go to top">Back to Top</button>
+			<br>
+		
+		<h2>How long dose it take me to paint a modle?</h2>
+			<form>
+				<input type="checkbox" id="item1" value="1" />
+				<label for="item1">1/72 Models (five at a time)</label>
+				<br>
+				<input type="checkbox" id="item2" value="4" />
+				<label for="item2">Vehicles</label>
+				<br>
+				<input type="checkbox" id="item3" value="2" />
+				<label for="item3">Fantasy (People)</label>
+				<br>
+				<input type="checkbox" id="item4" value="2" />
+				<label for="item4">Fantasy (werewols)</label>
+				<br>
+				<input type="checkbox" id="item5" value="1" />
+				<label for="item5">Fantasy (Goblins)</label>
+				<br>
+				<input type="checkbox" id="item6" value="2" />
+				<label for="item6">Fantasy (Animals)</label>
+				<br>
+				<input type="submit" id="submit" value="Submit" />
+			</form>
+			<br>
+			<button onclick="topFunction()" id="tBtn" title="Go to top">Back to Top</button>
+			<br>
+			<script>
+				function calcTotal() {
+				var totalHr = 0;
+				var item1 = document.getElementById("item1");
+				var item2 = document.getElementById("item2");
+				var item3 = document.getElementById("item3");
+				var item4 = document.getElementById("item4");
+				var item5 = document.getElementById("item5");
+				var item6 = document.getElementById("item6");
+				(item1.checked) ? (totalHr += 1) : (totalHr += 0);
+				(item2.checked) ? (totalHr += 4) : (totalHr += 0);
+				(item3.checked) ? (totalHr += 2) : (totalHr += 0);
+				(item4.checked) ? (totalHr += 2) : (totalHr += 0);
+				(item5.checked) ? (totalHr += 1) : (totalHr += 0);
+				(item6.checked) ? (totalHr += 2) : (totalHr += 0);
+				var totalWorkHr =totalHr;
+				alert("Total hours of painting is " + totalWorkHr);
+				}
+				document.getElementById("submit").addEventListener("click", calcTotal, false);
+			</script>
+	</main>
+	<footer>This page is made by Jose L. Padilla, as a College homework Assignment for educational purposes.
+	</footer>
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function topFunction() {
+		document.body.scrollTop = 0; /* For Safari */
+		document.documentElement.scrollTop = 0;} /* For Chrome, Firefox, IE and Opera */
+	</script>
+	</div>
+</body>
+</html>
