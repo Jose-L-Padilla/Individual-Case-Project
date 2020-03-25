@@ -36,11 +36,11 @@ main { background-color: #00bfff;
 /* Suggestions page */
 form {padding: 5px;
    height: 50px;
-   width: 50px;}
+   width: 300px;}
 fieldset {padding: 1em;
    border: none;
    float: left;
-   width: 190px;
+   width: 250px;
    height: 50px;}
 /* Suggestions page */
 #wrapper { margin: 0 auto;
