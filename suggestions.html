@@ -20,6 +20,7 @@
 			<li><a href="fantasy.html">Fantasy</a></li>
 			<li><a href="animals.html">Animals</a></li>
 			<li><a href="suggestions.html">Suggestions</a></li>
+			<li><a href="webSecurity.html">Web Security</a></li>
 			<li><a href="siteMap.html">Site Map</a></li>
 		</ul> 
 	</nav> 
@@ -39,9 +40,20 @@
 				<form>
 					<fieldset>
 						<label for="segBox" id="placeLabel">
-							Type the name of the model, then click Submit:
+							Type the name of the model, Defind what the model is made out of, then click Submit:
 						</label>
 						<input type="text" id="segBox" />
+					</fieldset>
+					<fieldset>
+						<input type="text" id="segBox" />
+						<br><br>
+						<label>
+							<input type="radio" name="plastic" value="5" /> Plastic
+						</label>
+						<br>
+						<label>
+							<input type="radio" name="metal" value="5" /> Metal 
+						</label>
 					</fieldset>
 					<fieldset>
 						<button type="button" id="button">Submit</button>
@@ -75,6 +87,7 @@
 			btn.attachEvent("onclick", processInput);
 		}
    </script>
+	<script src="script.js">
 	</main>
 	<footer>This page is made by Jose L. Padilla, as a College homework Assignment for educational purposes.
 	</footer>
